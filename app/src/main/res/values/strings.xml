@@ -1,0 +1,150 @@
+<resources>
+    <string name="app_name">Project Mapes</string>
+
+    <!--Mensagens de erro -->
+    <string name="erro_login_email">Insira um e-mail válido</string>
+    <string name="erro_senha_confirma_Senha">As senhas não conferem</string>
+    <string name="erro_senha">Senha incorreta</string>
+    <string name="erro_senha_cadastro_quant_minima">A senha tem que ter 6 caracteres no mínimo</string>
+    <string name="erro_login_cadastro_vazio">"Insira um login"</string>
+    <string name="erro_senha_cadastro_vazio">"Insira uma senha"</string>
+    <string name="erro_nome_cadastro_vazio">"Insira seu nome completo"</string>
+    <string name="erro_login_ja_existente">Já existe uma conta cadastrada com esse login</string>
+
+    <!--Tela de Login-->
+    <string name="hint_login_textview">Login (e-mail)</string>
+    <string name="ic_login_textview_description">Ícone de login(e-mail)</string>
+    <string name="hint_senha_textview">Senha</string>
+    <string name="ic_senha_textview_description">Ícone de senha</string>
+    <string name="entrar_button_label">Entrar</string>
+    <string name="cadastrar_button_label">Cadastrar-se</string>
+    <string name="esqueceu_senha_label"><u>Esqueceu a senha?</u></string>
+
+    <!--Dialog Esquceu a senha-->
+    <string name="titulo_esqueceu_senha_dialog"><b>Esqueceu sua senha?</b></string>
+    <string name="texto_esqueceu_senha_dialog">Digite seu e-mail de cadastro para receber um link para cadastro de nova senha:</string>
+    <string name="cancelar_dialog">Cancelar</string>
+    <string name="enviar_dialog">Enviar</string>
+
+    <!--Tela de Cadastro-->
+    <string name="title_cadastrar_activity">Crie seu perfil no MAPES</string>
+    <string name="criar_perfil_label">Crie seu perfil do MAPES</string>
+    <string name="cadastrar_com_google_button">Cadastrar com o Google</string>
+    <string name="cadastrar_com_facebook_button">Cadastrar com o Facebook</string>
+    <string name="hint_cadastrar_login_textview">Login</string>
+    <string name="hint_cadastrar_email_textview">E-mail</string>
+    <string name="hint_cadastrar_senha_textview">Senha</string>
+    <string name="hint_cadastrar_confirmar_senha_textview">Confirme a senha</string>
+    <string name="hint_cadastrar_nome_completo_textview">Nome completo</string>
+    <string name="perfil_label">Perfil:</string>
+    <string name="salvar_button">Salvar</string>
+    <string name="chooser_title">Carregar imagem</string>
+
+    <string-array name="perfis_array">
+        <item>Escolha</item>
+        <item>Aluno</item>
+        <item>Responsável</item>
+    </string-array>
+
+    <string name="facebook_app_id">2759474917423254</string>
+    <string name="fb_login_protocol_scheme">fb2759474917423254</string>
+    <string name="title_activity_facebook">FacebookActivity</string>
+
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_listar_usuarios">ListarUsuariosActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="default_info_title">Manaus</string>
+    <string name="default_info_snippet">Manaus</string>
+    <string name="pick_place">Selecione o lugar</string>
+    <string name="google_play_nao_suportado">Seu dispositivo não suporta o Google Play Services</string>
+
+    <string name="location_updated">Localização atualizada</string>
+    <string name="launch_Activity">Abrir MAPES</string>
+    <string name="remove_location_updates">Remover atualizações de localização</string>
+
+    <string name="acao_configuracoes">Configurações</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails</string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+    <string name="tit_conf_act">Configurações</string>
+    <string name="pref_cat_per_aula">PERÍODO DO RASTREAMENTO</string>
+    <string name="tit_pref_hor_ini">Horário inicial</string>
+    <string name="key_pref_hor_ini">horario_inicio</string>
+    <string name="tit_pref_hor_fin">Horário final</string>
+    <string name="key_pref_hor_fin">horario_fim</string>
+    <string name="pref_cat_req_loc">LOCALIZAÇÃO DO DISPOSITIVO</string>
+    <string name="tit_pref_per_req_loc">Intervalo das requisições</string>
+    <string name="des_pref_per_re_loc">Tempo de captura de localização do dispositivo</string>
+    <string name="key_per_sol_loc">periodo_solicitacao_localizacao</string>
+
+    <!--Opções Menu Lateral usuário -->
+    <string name="opcao_notificacoes">Notificações</string>
+    <string name="opcao_configuracoes">Configurações</string>
+    <string name="opcao_vinculos">Vínculos</string>
+    <string name="opcao_rotas">Rotas</string>
+    <string name="opcao_ajuda">Ajuda</string>
+    <string name="opcao_sair">Sair</string>
+
+    <!--Tela Vínculos-->
+    <string name="titulo_vinculos_activity">Vínculos</string>
+    <string name="pesquisa_hint">Pesquisar alunos</string>
+    <string name="acao_pesquisar">Pesquisar alunos</string>
+    <string name="adicionando_usuario">Você está adicionando </string>
+    <string name="texto_para_adicionar_senha">Digite uma senha para validar o vínculo solicitado</string>
+    <string name="titulo_dialog_adicionar_vinculo">Solicitar vínculo</string>
+    <string name="solicitacao_enviada">Solicitação enviada</string>
+    <string name="descricao_canal_notificacao">notificacao_solicitacao_vinculo</string>
+    <string name="nome_canal_notificacao">canal_solicitacao_vinculo</string>
+    <string name="aceitar">confirmar</string>
+    <string name="rejeitar">excluir</string>
+    <string name="digite_senha">Digite a senha</string>
+    <string name="solicitacao_vinculo_confirmada">Responsável adicionado com sucesso!</string>
+    <string name="erro_senha_aceitar_soliitacao_vinculo">Senha incorreta</string>
+
+    <string name="confirmando_vinculo_usuario">Digite a senha para confirmar o vínculo com:</string>
+    <string name="confirmar">confirmar</string>
+    <string name="pesquisar_vinculos">Pesquisar</string>
+    <string name="nome_tela_vinculos">Vínculos</string>
+    <string name="nenhum_vinculo_adicionado">Nenhum vínculo adicionado</string>
+    <string name="data_inicial">Data inicial</string>
+    <string name="data_final">Data final:</string>
+    <string name="consultar">Consultar</string>
+    <string name="opcao_inicio">Início</string>
+    <string name="nome_tela_configuracoes">Configurações</string>
+    <string name="nome_canal_notificacao_servico_rastreamento">servico_rastreamento_aluno</string>
+    <string name="descricao_canal_notificacao_servico_rastreamento">servico_rastreamento</string>
+    <string name="configurar_horarios">Acesse o menu CONFIGURAÇÕES para definir o período de rastreamento.</string>
+    <string name="nome_tela_notificacoes">Notificações</string>
+    <string name="horario_inicial">Hora início</string>
+    <string name="horario_final">Hora fim</string>
+    <string name="as">às</string>
+    <string name="nome_tela_rotas">Rotas</string>
+    <string name="vinculo">Aluno:</string>
+    <string name="usario_aluno">Aluno</string>
+    <string name="erro_campos_vazios">*Todos os campos devem ser preenchidos</string>
+    <string name="ultimas_notificacoes">Últimas notificações</string>
+    <string name="nenhuma_notificacao_recebida">Nenhuma notificação recebida</string>
+    <string name="nenhum_vinculo_adicionado_tela_principal_usuario_responsavel">Nenhum vínculo adicionado. Acesse a opção VÍNCULOS no menu lateral para adicionar um novo usuário</string>
+</resources>

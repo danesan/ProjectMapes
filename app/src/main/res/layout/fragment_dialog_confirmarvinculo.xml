@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollView_dialog_adicionarVinculo">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/confirmando_vinculo_usuario"
+            android:id="@+id/texto_confirmar_vinculo_dialog"
+            android:textSize="16sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_confirmar_vinculo_dialog"
+            android:layout_below="@id/texto_confirmar_vinculo_dialog"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:text="spiderman"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/senha_confirmar_vinculo_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_below="@id/login_confirmar_vinculo_dialog"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_cadastrar_senha_textview"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancelar_button_confirmar_vinculo_dialog"
+            android:text="@string/cancelar_dialog"
+            android:layout_below="@id/senha_confirmar_vinculo_dialog"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_toLeftOf="@id/enviar_button_canelar_vinculo_dialog"
+            style="?attr/materialButtonOutlinedStyle"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/enviar_button_canelar_vinculo_dialog"
+            android:text="@string/enviar_dialog"
+            android:layout_alignTop="@id/cancelar_button_confirmar_vinculo_dialog"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

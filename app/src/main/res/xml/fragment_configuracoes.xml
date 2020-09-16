@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="@string/pref_cat_per_aula">
+
+        <Preference
+            android:key="@string/key_pref_hor_ini"
+            android:title="@string/tit_pref_hor_ini"
+            app:useSimpleSummaryProvider="true"/>
+
+        <Preference
+            android:key="@string/key_pref_hor_fin"
+            android:title="@string/tit_pref_hor_fin"
+            app:useSimpleSummaryProvider="true"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_cat_req_loc">
+
+        <br.com.projectmapes.widgets.SeekbarPreference
+            android:clickable="false"
+            android:isScrollContainer="false"
+            android:key="@string/key_per_sol_loc"
+            android:selectable="false"
+            android:visibility="visible"
+            app:iconSpaceReserved="false"
+            app:selectable="false"
+            android:title="textoo"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

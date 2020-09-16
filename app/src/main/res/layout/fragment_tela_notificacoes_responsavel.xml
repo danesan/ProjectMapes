@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaNotificacoesResponsavelFragment">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/usuario_aluno_menu_dropdown_tela_notificacoes"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="@string/usario_aluno"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <AutoCompleteTextView
+        android:id="@+id/login_aluno_autocompletetextview_tela_notificacoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:completionThreshold="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/data_inicial_text_view_tela_notificacoes_usuario_responsavel"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="4dp"
+        android:hint="@string/data_inicial"
+        app:errorEnabled="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usuario_aluno_menu_dropdown_tela_notificacoes">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/data_inicial_date_picker_tela_notificacoes_usuario_responsavel"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="56dp"
+        android:layout_height="52dp"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        android:paddingLeft="12dp"
+        app:icon="@drawable/ic_today_blue_24dp"
+        app:iconPadding="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/data_inicial_text_view_tela_notificacoes_usuario_responsavel"
+        app:layout_constraintStart_toEndOf="@+id/data_inicial_text_view_tela_notificacoes_usuario_responsavel"
+        app:layout_constraintTop_toTopOf="@+id/data_inicial_text_view_tela_notificacoes_usuario_responsavel"
+        app:layout_constraintVertical_bias="0.25
+" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/data_final_text_view_tela_notificacoes_usuario_responsavel"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="4dp"
+        android:hint="@string/data_final"
+        app:errorEnabled="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/data_inicial_text_view_tela_notificacoes_usuario_responsavel">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/data_final_date_picker_tela_notificacoes_usuario_responsavel"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="56dp"
+        android:layout_height="52dp"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        android:paddingLeft="12dp"
+        app:icon="@drawable/ic_today_blue_24dp"
+        app:iconPadding="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/data_final_text_view_tela_notificacoes_usuario_responsavel"
+        app:layout_constraintStart_toEndOf="@+id/data_final_text_view_tela_notificacoes_usuario_responsavel"
+        app:layout_constraintTop_toTopOf="@+id/data_final_text_view_tela_notificacoes_usuario_responsavel"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <TextView
+        android:id="@+id/erro_todos_campos_obrigatorios_text_view_tela_notificacoes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/erro_campos_vazios"
+        android:textColor="#B2001A"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/data_final_text_view_tela_notificacoes_usuario_responsavel"
+        app:layout_constraintTop_toBottomOf="@+id/data_final_text_view_tela_notificacoes_usuario_responsavel" />
+
+    <Button
+        android:id="@+id/consultar_button_tela_notificacoes_usuario_responsavel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/consultar"
+        app:layout_constraintStart_toStartOf="@+id/data_final_text_view_tela_notificacoes_usuario_responsavel"
+        app:layout_constraintTop_toBottomOf="@+id/data_final_text_view_tela_notificacoes_usuario_responsavel" />
+
+    <!--
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/lista_notificacoes_swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="352dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/notificacoes_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout> -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notificacoes_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="352dp"
+        android:scrollbars="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/cor_primaria"
+        app:layout_constraintBottom_toTopOf="@+id/lista_notificacoes_swipe_refresh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/consultar_button_tela_notificacoes_usuario_responsavel" />
+
+    <TextView
+        android:id="@+id/sem_registro_encontrado_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nenhum registro encontrado"
+        app:layout_constraintBottom_toBottomOf="@+id/notificacoes_recycler_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/notificacoes_recycler_view" />
+
+    <ProgressBar
+        android:id="@+id/carregando_notificacoes_tela_notificacoes_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

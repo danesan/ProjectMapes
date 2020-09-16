@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".TelaPrincipalUsuarioResponsavelActivity">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/opcao_inicio_menu_usuario_responsavel"
+            android:icon="@drawable/ic_home"
+            android:title="@string/opcao_inicio" />
+        <item
+            android:id="@+id/opcao_notificacoes"
+            android:icon="@drawable/ic_notificacoes"
+            android:title="@string/opcao_notificacoes" />
+        <item
+            android:id="@+id/opcao_rotas"
+            android:icon="@drawable/ic_rotas"
+            android:title="@string/opcao_rotas" />
+        <item
+            android:id="@+id/opcao_vinculos_menu_usuario_responsavel"
+            android:icon="@drawable/ic_vinculos"
+            android:title="@string/opcao_vinculos" />
+        <item
+            android:id="@+id/opcao_ajuda"
+            android:icon="@android:drawable/ic_menu_help"
+            android:title="@string/opcao_ajuda" />
+        <item
+            android:id="@+id/opcao_sair"
+            android:icon="@drawable/ic_sair"
+            android:title="@string/opcao_sair" />
+    </group>
+
+</menu>

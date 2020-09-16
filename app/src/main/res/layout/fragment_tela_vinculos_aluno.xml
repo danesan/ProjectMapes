@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_usuarios_tela_vinculos"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/resultado_vinculos_text_view_tela_vinculos_usuario_aluno"
+        android:text="@string/nenhum_vinculo_adicionado"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp" />
+    <!--
+                android:layout_below="@id/toolbar_TelaPrincipal"-->
+</RelativeLayout>
+

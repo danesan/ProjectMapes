@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/fotoUsuarioItem"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/loginUsuarioItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/fotoUsuarioItem"
+            android:layout_toEndOf="@id/fotoUsuarioItem"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:textStyle="bold"
+            style="@style/titulo" />
+
+        <TextView
+            android:id="@+id/nomeCompletoUsuarioItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginUsuarioItem"
+            android:layout_alignLeft="@id/loginUsuarioItem"
+            android:layout_alignStart="@id/loginUsuarioItem"
+            android:layout_alignRight="@id/loginUsuarioItem"
+            android:layout_alignEnd="@id/loginUsuarioItem"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/confirmar_vinculo_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/aceitar"
+            android:layout_below="@id/nomeCompletoUsuarioItem"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_toLeftOf="@id/excluir_vinculo_button"
+            android:layout_toStartOf="@id/excluir_vinculo_button" />
+
+        <Button
+            android:id="@+id/excluir_vinculo_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rejeitar"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@id/confirmar_vinculo_button"
+            />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom"
+        android:background="@color/cor_primaria_selecao" />
+
+</LinearLayout>

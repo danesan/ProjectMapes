@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollView_dialog_adicionarVinculo">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/adicionando_usuario"
+            android:id="@+id/texto_adicionandoDialogAdicionarVinculo"
+            android:textSize="16sp"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nomeUsuario_DialogAdicionarVinculo"
+            android:layout_toRightOf="@id/texto_adicionandoDialogAdicionarVinculo"
+            android:layout_marginLeft="4dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_para_adicionar_senha"
+            android:id="@+id/texto_adicionar_senha_DialogAdicionarVinculo"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:layout_below="@id/nomeUsuario_DialogAdicionarVinculo"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/cadastrarSenhaEditTextDialogAdicionarVinculo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_below="@id/texto_adicionar_senha_DialogAdicionarVinculo"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_cadastrar_senha_textview"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/cadastrarConfirmarSenhaEditTextDialogAdicionarVinculo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_below="@id/cadastrarSenhaEditTextDialogAdicionarVinculo"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_cadastrar_confirmar_senha_textview"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancelarButtonAdicionarVinculoDialogFragment"
+            android:text="@string/cancelar_dialog"
+            android:layout_below="@id/cadastrarConfirmarSenhaEditTextDialogAdicionarVinculo"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_toLeftOf="@id/enviarButtonAdicionarVinculoDialogFragment"
+            style="?attr/materialButtonOutlinedStyle"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/enviarButtonAdicionarVinculoDialogFragment"
+            android:text="@string/enviar_dialog"
+            android:layout_alignTop="@id/cancelarButtonAdicionarVinculoDialogFragment"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaInicioResponsavelFragment">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_view_tela_principal_usuario_responsavel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/notificacoes_lista_fragment"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/notificacoes_lista_fragment"
+        android:name="br.com.projectmapes.NotificacoesEntradaSaidaFragment"
+        android:layout_width="match_parent"
+        android:layout_height="208dp"
+        android:layout_alignParentBottom="true"
+        tools:layout="@layout/fragment_notificacoes_entrada_saida" />
+
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".TelaPrincipalUsuarioAlunoActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/opcao_inicio_menu_usuario_aluno"
+            android:icon="@drawable/ic_home"
+            app:actionViewClass="android.widget.TextView"
+            android:title="@string/opcao_inicio" />
+        <item
+            android:id="@+id/opcao_vinculos_menu_usuario_aluno"
+            android:icon="@drawable/ic_vinculos"
+            app:actionViewClass="android.widget.TextView"
+            android:title="@string/opcao_vinculos" />
+        <item
+            android:id="@+id/opcao_configuracoes_menu_usuario_aluno"
+            android:icon="@drawable/ic_configuracoes"
+            android:title="@string/acao_configuracoes" />
+        <item
+            android:id="@+id/opcao_ajuda_menu_usuario_aluno"
+            android:icon="@android:drawable/ic_menu_help"
+            android:title="@string/opcao_ajuda" />
+        <item
+            android:id="@+id/opcao_sair"
+            android:icon="@drawable/ic_sair"
+            android:title="@string/opcao_sair" />
+    </group>
+
+</menu>

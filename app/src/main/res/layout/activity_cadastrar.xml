@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout_tela_cadastrar">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/containerCadastroImagemFragment"
+            android:name="br.com.projectmapes.CadastroImagemFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            tools:layout="@layout/fragment_cadastro_imagem" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/cadastrarLoginEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/containerCadastroImagemFragment"
+            android:layout_marginTop="12dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_cadastrar_login_textview"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/cadastrarEmailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cadastrarLoginEditText"
+            android:layout_alignLeft="@id/cadastrarLoginEditText"
+            android:layout_marginTop="12dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_alignStart="@id/cadastrarLoginEditText">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:hint="@string/hint_cadastrar_email_textview"
+                android:inputType="text"
+                android:textAlignment="textStart" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/cadastrarSenhaEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cadastrarEmailEditText"
+            android:layout_alignLeft="@id/cadastrarEmailEditText"
+            android:layout_marginTop="12dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_alignStart="@id/cadastrarEmailEditText">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_cadastrar_senha_textview"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/cadastrarConfirmarSenhaEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cadastrarSenhaEditText"
+            android:layout_alignLeft="@id/cadastrarSenhaEditText"
+            android:layout_marginTop="12dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_alignStart="@id/cadastrarSenhaEditText">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_cadastrar_confirmar_senha_textview"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/cadastrarNomeCompletoEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cadastrarConfirmarSenhaEditText"
+            android:layout_marginTop="12dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_cadastrar_nome_completo_textview"
+                android:imeOptions="actionDone"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/perfilLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/cadastrarNomeCompletoEditText"
+            android:text="@string/perfil_label"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/perfilSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignTop="@id/perfilLabel"
+            android:layout_toEndOf="@id/perfilLabel"
+            android:layout_toRightOf="@id/perfilLabel"
+            android:text="@string/perfil_label"
+            android:textSize="16sp" /> -->
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:id="@+id/perfilLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/perfil_label"
+            android:layout_below="@id/cadastrarNomeCompletoEditText"
+            android:layout_marginTop="12dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/perfil_exposed_dropdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/salvarButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/perfilLabel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/salvar_button" />
+
+        <ProgressBar
+            android:id="@+id/upload_imagemperfil_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:visibility="gone"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</ScrollView>

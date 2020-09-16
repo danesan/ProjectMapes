@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/foto_usuario_aluno_item"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/login_usuario_aluno_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/foto_usuario_aluno_item"
+            android:layout_toEndOf="@id/foto_usuario_aluno_item"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+
+        <!--style="@style/titulo" -->
+
+        <TextView
+            android:id="@+id/nome_completo_usuario_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_usuario_aluno_item"
+            android:layout_alignLeft="@id/login_usuario_aluno_item"
+            android:layout_alignStart="@id/login_usuario_aluno_item"
+            android:layout_alignRight="@id/login_usuario_aluno_item"
+            android:layout_alignEnd="@id/login_usuario_aluno_item"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+<!--
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom"
+        android:background="@color/cor_primaria_selecao" />-->
+
+</LinearLayout>

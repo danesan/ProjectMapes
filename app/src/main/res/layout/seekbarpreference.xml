@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@android:id/widget_frame"
+    android:layout_marginLeft="40dp">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/titulo_seekbarpreference"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/tit_pref_per_req_loc"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/descricao_seekbarpreference"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titulo_seekbarpreference"
+        android:text="@string/des_pref_per_re_loc"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/diminuir_seekbarpreference_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descricao_seekbarpreference"
+        app:iconPadding="0dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:minWidth="36dp"
+        android:minHeight="48dp"
+        app:icon="@drawable/ic_remove_circle_blue_24dp"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"/>
+
+    <SeekBar
+        android:id="@+id/seekbarpreference"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/descricao_seekbarpreference"
+        android:layout_toLeftOf="@id/aumentar_seekbarpreference_button"
+        android:layout_toRightOf="@id/diminuir_seekbarpreference_button"
+        android:min="15"
+        android:max="600"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/aumentar_seekbarpreference_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descricao_seekbarpreference"
+        android:layout_alignParentRight="true"
+        app:iconPadding="0dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:icon="@drawable/ic_add_circle_blue_24dp"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"/>
+
+    <TextView
+        android:id="@+id/valor_seekbarpreference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/diminuir_seekbarpreference_button"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"/>
+
+</RelativeLayout>

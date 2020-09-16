@@ -1,0 +1,2 @@
+rootProject.name='ProjectMapes'
+include ':app'

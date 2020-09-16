@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cadastrarNotificacaoButton"
+        android:padding="8dp"
+        android:text="Cadastrar Notificação" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginCadastrarNotificacao"
+        android:layout_toRightOf="@id/cadastrarNotificacaoButton"
+        android:layout_alignBaseline="@id/cadastrarNotificacaoButton"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"/>
+
+</RelativeLayout>
